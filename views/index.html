@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconic Tech Giveaway</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://files.catbox.moe/pxa13b.jpg" alt="Iconic Tech Logo" class="logo">
+            <h1>Iconic Tech Giveaway</h1>
+            <p>Enter for a chance to win amazing tech prizes!</p>
+        </header>
+
+        <form id="giveawayForm" action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="knowFrom">Where did you hear about us?</label>
+                <select id="knowFrom" name="knowFrom" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Select Giveaway:</label>
+                <div class="giveaway-options">
+                    <label>
+                        <input type="radio" name="giveaway" value="Queen Ruva AI Beta" required>
+                        Queen Ruva AI Beta
+                    </label>
+                    <label>
+                        <input type="radio" name="giveaway" value="TERMINER QR MD Bug">
+                        TERMINER QR MD Bug
+                    </label>
+                    <label>
+                        <input type="radio" name="giveaway" value="Joker Max XMD">
+                        Joker Max XMD
+                    </label>
+                    <label>
+                        <input type="radio" name="giveaway" value="Termux Commands">
+                        Termux Commands
+                    </label>
+                    <label>
+                        <input type="radio" name="giveaway" value="Learn Coding With You">
+                        Learn Coding With You
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Clear Form</button>
+            </div>
+        </form>
+
+        <footer>
+<div class="social-links">
+    <a href="https://whatsapp.com/channel/0029ValX2Js9RZAVtDgMYj0r" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40" height="40">
+    </a>
+    <a href="https://t.me/iconictech_official" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="40" height="40">
+    </a>
+    <a href="#" target="_blank">
+        <img src="https://files.catbox.moe/19my0r.jpg" alt="Iconic Tech" width="40" height="40">
+    </a>
+</div>
+            <p>© 2025 Iconic Tech Inc. All rights reserved.</p>
+            <p class="developed-by">Developed by Iconic Tech</p>
+        </footer>
+    </div>
+
+    <script src="/public/script.js"></script>
+</body>
+</html>
